@@ -1,0 +1,94 @@
+V "GNAT Lib v10"
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_RECURSION
+RV SPARK_05
+
+U jpplib%b		jpplib.adb		175faed6 NE OO PK IL
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+
+U jpplib%s		jpplib.ads		cb4618d8 NE OO PR PK IL
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-c.ads		20230707070819 5421119b interfaces.c%s
+D jpplib.ads		20240411131906 9f670943 jpplib%s
+D jpplib.adb		20240411132127 dc19b60e jpplib%b
+D system.ads		20230707070819 4635ec04 system%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+G a e
+G c Z s b [factorial_loop jpplib 5 14 none]
+G c Z s b [factorial_recursive jpplib 11 14 none]
+G c Z s b [gcd_loop jpplib 17 14 none]
+G c Z s b [gcd_recursive jpplib 25 14 none]
+G c Z s b [diophantic_loop jpplib 41 14 none]
+G c Z s b [diophantic_recursive_call jpplib 50 14 none]
+G c Z s b [diophantic_recursive jpplib 60 14 none]
+G c Z s s [diophanticresultIP jpplib 33 10 none]
+X 3 interfac.ads
+38K9*Interfaces 184e15 5|1r6 1r24 6|1r6 1r24
+X 4 i-c.ads
+18K20*C 230e17 5|1w17 1r35 6|1w17 1r35
+X 5 jpplib.ads
+3K9*JPPLib 70l5 70e11 6|3b14 155l5 155t11
+5V14*factorial_loop{integer} 5>29 6|4b14 13l9 13t23
+5i29 n{integer} 6|4b29 6r28
+11V14*factorial_recursive{integer} 11>34 6|15b14 20s20 21l9 21t28
+11i34 n{integer} 6|15b34 17r12 20r16 20r40
+17V14*gcd_loop{integer} 18>9 19>9 6|23b14 42l9 42t17
+18i9 a_in{integer} 6|24b9 27r23
+19i9 b_in{integer} 6|25b9 28r23
+25V14*gcd_recursive{integer} 26>9 27>9 6|44b14 54s20 56s20 58l9 58t22
+26i9 a{integer} 6|45b9 49r12 52r20 53r15 54r34 56r34 56r43
+27i9 b{integer} 6|46b9 50r20 51r15 53r19 54r40 54r43 56r37
+33R10*DiophanticResult 38e5 44r29 53r30 67r38 6|63r29 106r30 118r38
+34i9*r{integer} 6|75m25 77m25 97m21 100m17 130m25 132m25 134m25
+35i9*x{integer} 6|75m33 77m33 97m29 100m25 134m33
+36i9*y{integer} 6|75m41 77m41 97m37 100m39 134m47
+41V14*diophantic_loop{33R10} 42>9 43>9 44>9 6|60b14 101l9 101t24
+42i9 a{integer} 6|61b9 65r25
+43i9 b{integer} 6|62b9 66r25
+44i9 c{integer} 6|63b9 74r16 96r12 100r33 100r47
+50V14*diophantic_recursive_call{33R10} 51>9 52>9 53>9 6|103b15 109l9 109t34
+51i9 r0{integer} 6|104b9 108r37
+52i9 r1{integer} 6|105b9 108r41
+53i9 c{integer} 6|106b9 108r45
+60V14*diophantic_recursive{33R10} 61>9 62>9 63>9 64>9 65>9 66>9 67>9 6|108s16
+. 111b14 152s16 153l9 153t29
+61i9 r0_in{integer} 6|112b9 120r25
+62i9 r1_in{integer} 6|113b9 121r25
+63i9 c{integer} 6|114b9 130r34 131r19 134r41 134r55 152r45
+64i9 s0_in{integer} 6|115b9 122r25
+65i9 s1_in{integer} 6|116b9 123r25
+66i9 t0_in{integer} 6|117b9 124r25
+67i9 t1_in{integer} 6|118b9 125r25
+X 6 jpplib.adb
+5i9 factorial{integer} 9m13 9r26 12r16
+6i9 n_copy{integer} 8r15 9r38 10m13 10r23
+27i9 a{integer} 30r15 31r16 32m17 32r22 34r28 37r12 40r20
+28i9 b{integer} 30r26 31r20 32r28 34m17 34r22 38r20
+65i9 r0{integer} 73r12 82r18 84r19 85m13 96r18 100r35 100r49
+66i9 r1{integer} 73r23 81r15 82r21 83r20 84m13 84r24
+67i9 s0{integer} 88r19 89m13 100r30
+68i9 s1{integer} 87r20 88m13 88r24
+69i9 t0{integer} 92r19 93m13 100r44
+70i9 t1{integer} 91r20 92m13 92r24
+71i9 q{integer} 82m13 84r27 88r27 92r27
+71i12 tmp{integer} 83m13 85r19 87m13 89r19 91m13 93r19
+120i9 r0{integer} 129r16 131r25 134r43 134r57 138r14 141r15 142m9 152r37
+121i9 r1{integer} 128r12 138r17 140r16 141m9 141r20 152r41
+122i9 s0{integer} 134r38 145r15 146m9 152r48
+123i9 s1{integer} 144r16 145m9 145r20 152r52
+124i9 t0{integer} 134r52 149r15 150m9 152r56
+125i9 t1{integer} 148r16 149m9 149r20 152r60
+126i9 q{integer} 138m9 141r23 145r23 149r23
+126i12 tmp{integer} 140m9 142r15 144m9 146r15 148m9 150r15
+

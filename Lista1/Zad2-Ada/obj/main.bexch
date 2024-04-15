@@ -1,0 +1,22 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+/mnt/c/Users/janry/OneDrive/Dokumenty/Dev/jpp/Lista1/Zad2-Ada/lib_project.gpr
+20240411094110 d21656a8b82fc9491fbf6ca547849342
+[BOUND OBJECT FILES]
+/mnt/c/Users/janry/OneDrive/Dokumenty/Dev/jpp/Lista1/Zad2-Ada/obj/main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-L/mnt/c/Users/janry/OneDrive/Dokumenty/Dev/jpp/Lista1/Zad2-Ada/obj/
+-L/mnt/c/Users/janry/OneDrive/Dokumenty/Dev/jpp/Lista1/Zad2-Ada/obj/
+-L/usr/lib/gcc/x86_64-linux-gnu/10/adalib/
+-shared
+-shared-libgcc
+-lgnat-10
+-ldl
+[RUN PATH OPTION]
+/usr/lib/gcc/x86_64-linux-gnu/10/adalib/
+/usr/lib

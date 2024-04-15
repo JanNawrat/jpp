@@ -1,0 +1,4 @@
+rust_wrapper/target/
+rust_wrapper/src/c_library/c_library.o
+rust_wrapper/src/c_library-libc_library.a
+zad6/target/

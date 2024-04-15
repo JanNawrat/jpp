@@ -1,0 +1,96 @@
+V "GNAT Lib v10"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U main%b		main.adb		838eb5fd NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-c.ads		20230707070819 5421119b interfaces.c%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D main.adb		20240411095954 795b710b main%b
+D system.ads		20230707070819 4635ec04 system%s
+D s-conca2.ads		20230707070819 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-imgint.ads		20230707070819 02dbe0c2 system.img_int%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
+G a e
+G c Z b b [main standard 4 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 11|2r6 2r24
+X 6 a-textio.ads
+57K13*Text_IO 727e16 11|2w10 2r28
+508U14*Put_Line 11|51s4 52s4 53s4
+X 8 interfac.ads
+38K9*Interfaces 184e15 11|1r6 1r24 6r9 7r9 8r9
+X 9 i-c.ads
+18K20*C 230e17 11|1w17 1r35 6r20 7r20 8r20
+35I9*int<integer> 11|6r22 7r22 8r22 13r31 13r43 18r36 18r48 23r24 23r32 23r44
+. 28r29 28r37 28r49 33r32 33r41 33r49 38r42 38r51 38r59 38r68 38r77 38r86
+. 38r95 43r36 43r44 43r52 51r29 52r29 53r29
+X 11 main.adb
+4U11*main 4b11 54l5 54t9
+5R8 DiophanticResult 9e13 10r25 33r61 38r107 43r64 48r8
+6i5 r{9|35I9} 51r42
+7i5 x{9|35I9} 52r42
+8i5 y{9|35I9} 53r42
+13V12*factorial_loop{9|35I9} 13>27
+13i27 n{9|35I9}
+18V12*factorial_recursive{9|35I9} 18>32
+18i32 n{9|35I9}
+23V12*gcd_loop{9|35I9} 23>21 23>29
+23i21 a{9|35I9}
+23i29 b{9|35I9}
+28V12*gcd_recursive{9|35I9} 28>26 28>34
+28i26 a{9|35I9}
+28i34 b{9|35I9}
+33V12*diophantic_loop{5R8} 33>28 33>37 33>46 50s9
+33i28 r0{9|35I9}
+33i37 r1{9|35I9}
+33i46 c{9|35I9}
+38V12*diophantic_recursive_body{5R8} 38>38 38>47 38>56 38>64 38>73 38>82
+. 38>91
+38i38 r0{9|35I9}
+38i47 r1{9|35I9}
+38i56 c{9|35I9}
+38i64 s0{9|35I9}
+38i73 s1{9|35I9}
+38i82 t0{9|35I9}
+38i91 t1{9|35I9}
+43V12*diophantic_recursive{5R8} 43>33 43>41 43>49
+43i33 a{9|35I9}
+43i41 b{9|35I9}
+43i49 c{9|35I9}
+48r4 V{5R8} 50m4 51r40 52r40 53r40
+

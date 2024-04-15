@@ -1,0 +1,78 @@
+V "GNAT Lib v10"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_RECURSION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U jpplib%b		jpplib.adb		a8c41d08 NE OO PK IL
+
+U jpplib%s		jpplib.ads		dd0e1426 NE OO PR PK IL
+
+D jpplib.ads		20240409164456 dd0e1426 jpplib%s
+D jpplib.adb		20240409164855 75ca092e jpplib%b
+D system.ads		20230707070819 4635ec04 system%s
+G a e
+G c Z s b [factorial_loop jpplib 3 14 none]
+G c Z s b [factorial_recursive jpplib 5 14 none]
+G c Z s b [gcd_loop jpplib 7 14 none]
+G c Z s b [gcd_recursive jpplib 11 14 none]
+G c Z s b [diophantic_loop jpplib 21 14 none]
+G c Z s b [diophantic_recursive jpplib 26 14 none]
+G c Z s s [diophanticresultIP jpplib 15 10 none]
+X 1 jpplib.ads
+1K9*JPPLib 36l5 36e11 2|1b14 145l5 145t11
+3V14*factorial_loop{integer} 3>29 2|2b14 11l9 11t23
+3i29 n{integer} 2|2b29 4r28
+5V14*factorial_recursive{integer} 5>34 2|13b14 18s20 19l9 19t28
+5i34 n{integer} 2|13b34 15r12 18r16 18r40
+7V14*gcd_loop{integer} 8>9 9>9 2|21b14 40l9 40t17
+8i9 a_in{integer} 2|22b9 25r23
+9i9 b_in{integer} 2|23b9 26r23
+11V14*gcd_recursive{integer} 12>9 13>9 2|42b14 52s20 54s20 56l9 56t22
+12i9 a{integer} 2|43b9 47r12 50r20 51r15 52r34 54r34 54r43
+13i9 b{integer} 2|44b9 48r20 49r15 51r19 52r40 52r43 54r37
+15R10*DiophanticResult 19e15 24r29 33r38 2|61r29 108r38
+16i9*r{integer} 2|73m25 75m25 95m21 98m17 120m25 122m25 124m25
+17i9*x{integer} 2|73m33 75m33 95m29 98m25 124m33
+18i9*y{integer} 2|73m41 75m41 95m37 98m39 124m47
+21V14*diophantic_loop{15R10} 22>9 23>9 24>9 2|58b14 99l9 99t24
+22i9 a{integer} 2|59b9 63r25
+23i9 b{integer} 2|60b9 64r25
+24i9 c{integer} 2|61b9 72r16 94r12 98r33 98r47
+26V14*diophantic_recursive{15R10} 27>9 28>9 29>9 30>9 31>9 32>9 33>9 2|101b14
+. 142s16 143l9 143t29
+27i9 r0_in{integer} 2|102b9 110r25
+28i9 r1_in{integer} 2|103b9 111r25
+29i9 c{integer} 2|104b9 120r34 121r19 124r41 124r55 142r45
+30i9 s0_in{integer} 2|105b9 112r25
+31i9 s1_in{integer} 2|106b9 113r25
+32i9 t0_in{integer} 2|107b9 114r25
+33i9 t1_in{integer} 2|108b9 115r25
+X 2 jpplib.adb
+3i9 factorial{integer} 7m13 7r26 10r16
+4i9 n_copy{integer} 6r15 7r38 8m13 8r23
+25i9 a{integer} 28r15 29r16 30m17 30r22 32r28 35r12 38r20
+26i9 b{integer} 28r26 29r20 30r28 32m17 32r22 36r20
+63i9 r0{integer} 71r12 80r18 82r19 83m13 94r18 98r35 98r49
+64i9 r1{integer} 71r23 79r15 80r21 81r20 82m13 82r24
+65i9 s0{integer} 86r19 87m13 98r30
+66i9 s1{integer} 85r20 86m13 86r24
+67i9 t0{integer} 90r19 91m13 98r44
+68i9 t1{integer} 89r20 90m13 90r24
+69i9 q{integer} 80m13 82r27 86r27 90r27
+69i12 tmp{integer} 81m13 83r19 85m13 87r19 89m13 91r19
+110i9 r0{integer} 119r16 121r25 124r43 124r57 128r14 131r15 132m9 142r37
+111i9 r1{integer} 118r12 128r17 130r16 131m9 131r20 142r41
+112i9 s0{integer} 124r38 135r15 136m9 142r48
+113i9 s1{integer} 134r16 135m9 135r20 142r52
+114i9 t0{integer} 124r52 139r15 140m9 142r56
+115i9 t1{integer} 138r16 139m9 139r20 142r60
+116i9 q{integer} 128m9 131r23 135r23 139r23
+116i12 tmp{integer} 130m9 132r15 134m9 136r15 138m9 140r15
+

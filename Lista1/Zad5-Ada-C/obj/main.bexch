@@ -1,0 +1,22 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+/mnt/c/Users/janry/OneDrive/Dokumenty/Dev/jpp/Lista1/Zad5-Ada-C/test_project.gpr
+20240409192726 d5958767fe68d5de9f901056be37af61
+[BOUND OBJECT FILES]
+/mnt/c/Users/janry/OneDrive/Dokumenty/Dev/jpp/Lista1/Zad5-Ada-C/obj/main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-L/mnt/c/Users/janry/OneDrive/Dokumenty/Dev/jpp/Lista1/Zad5-Ada-C/obj/
+-L/mnt/c/Users/janry/OneDrive/Dokumenty/Dev/jpp/Lista1/Zad5-Ada-C/obj/
+-L/usr/lib/gcc/x86_64-linux-gnu/10/adalib/
+-shared
+-shared-libgcc
+-lgnat-10
+-ldl
+[RUN PATH OPTION]
+/usr/lib/gcc/x86_64-linux-gnu/10/adalib/
+/usr/lib
