@@ -1,4 +1,4 @@
-#include "lib.h"
+#include "c_library.h"
 
 int factorial_loop(int n) {
     int factorial = 1;

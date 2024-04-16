@@ -1,0 +1,117 @@
+V "GNAT Lib v10"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IO
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U zad2%b		zad2.adb		9a17468b NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada_library%s		ada_library.adb		ada_library.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_4%s	s-conca4.adb		s-conca4.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+W test%s		test.adb		test.ali
+W text_io%s		text_io.ads		text_io.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-assert.ads		20230707070819 a1febc19 ada.assertions%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-inteio.ads		20230707070819 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
+D a-tiinio.ads		20230707070819 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D ada_library.ads	20240415233254 8fd76ba2 ada_library%s
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D system.ads		20230707070819 4635ec04 system%s
+D s-assert.ads		20230707070819 cd8d2c94 system.assertions%s
+D s-conca2.ads		20230707070819 02a0d7d0 system.concat_2%s
+D s-conca4.ads		20230707070819 7e642b20 system.concat_4%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-imgint.ads		20230707070819 02dbe0c2 system.img_int%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
+D test.ads		20240416001707 314f1318 test%s
+D text_io.ads		20230707070819 21b2c898 text_io%s
+D zad2.adb		20240416002550 f3767f0d zad2%b
+G a e
+G c Z b b [zad2 standard 6 11 none]
+G r s diophanticresult [zad2 standard 6 11 none] [diophanticresultIP ada_library 15 10 none]
+G r c none [zad2 standard 6 11 none] [test_factorial_loop test 6 15 none]
+G r c none [zad2 standard 6 11 none] [test_factorial_recursive test 7 15 none]
+G r c none [zad2 standard 6 11 none] [test_gcd_loop test 8 15 none]
+G r c none [zad2 standard 6 11 none] [test_gcd_recursive test 9 15 none]
+G r c none [zad2 standard 6 11 none] [test_diophantic_loop test 10 15 none]
+G r c none [zad2 standard 6 11 none] [test_diophantic_recursive test 11 15 none]
+G r c none [zad2 standard 6 11 none] [factorial_loop ada_library 3 14 none]
+G r c none [zad2 standard 6 11 none] [factorial_recursive ada_library 5 14 none]
+G r c none [zad2 standard 6 11 none] [gcd_loop ada_library 7 14 none]
+G r c none [zad2 standard 6 11 none] [gcd_recursive ada_library 11 14 none]
+G r c none [zad2 standard 6 11 none] [diophantic_loop ada_library 21 14 none]
+G r c none [zad2 standard 6 11 none] [diophantic_recursive ada_library 26 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 33|2r6 2r31
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[9|46] 33|2w10 2r35
+X 8 a-textio.ads
+508U14*Put_Line 33|21s4 23s7 24s7 25s7 26s7 27s7 28s7 29s7 33s13 36s13 38s13
+. 41s13 43s13 47s13 49s13 53s13 55s13 61s16 63s16 65s16 68s13 74s16 76s16
+. 78s16
+X 9 a-tiinio.ads
+59U14*Get 33|30s7[4|18] 34s13[4|18] 39s13[4|18] 44s13[4|18] 45s13[4|18] 50s13[4|18]
+. 51s13[4|18] 56s13[4|18] 57s13[4|18] 58s13[4|18] 69s13[4|18] 70s13[4|18]
+. 71s13[4|18]
+X 11 ada_library.ads
+1K9*Ada_Library 36e16 33|3w6 3r23
+3V14*factorial_loop{integer} 33|35s23
+5V14*factorial_recursive{integer} 33|40s23
+7V14*gcd_loop{integer} 33|46s23
+11V14*gcd_recursive{integer} 33|52s23
+15R10*DiophanticResult 19e15 33|10r19
+16i9*r{integer} 33|60r29 62r32 64r32 73r29 75r32 77r32
+17i9*x{integer} 33|61r69 74r69
+18i9*y{integer} 33|61r112 74r112
+21V14*diophantic_loop{15R10} 33|59s29
+26V14*diophantic_recursive{15R10} 33|72s29
+X 31 test.ads
+4K9*Test 13e9 33|4w6 4r16
+6U15*test_factorial_loop 33|14s4
+7U15*test_factorial_recursive 33|15s4
+8U15*test_GCD_loop 33|16s4
+9U15*test_GCD_recursive 33|17s4
+10U15*test_diophantic_loop 33|18s4
+11U15*test_diophantic_recursive 33|19s4
+X 32 text_io.ads
+24K9*Text_IO=24:29 33|1w6 1r19
+X 33 zad2.adb
+6U11*zad2 6b11 86l5 86t9
+7i4 option{integer} 30m11 31r12
+8i4 a{integer} 34m17 35r38 39m17 40r43 44m17 46r32 50m17 52r37 56m17 59r45
+. 69m17 72r50
+8i7 b{integer} 45m17 46r35 51m17 52r40 57m17 59r48 70m17 72r53
+8i10 c{integer} 58m17 59r51 71m17 72r56
+9i4 result{integer} 35m13 36r49 40m13 41r49 46m13 47r49 52m13 53r49
+10r4 resultSrtuct{11|15R10} 59m13 60r16 61r56 61r99 62r19 64r19 72m13 73r16
+. 74r56 74r99 75r19 77r19
+

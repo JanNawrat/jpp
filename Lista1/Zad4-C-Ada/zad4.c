@@ -1,5 +1,15 @@
 #include <stdio.h>
-#include "c_library.h"
+
+typedef struct DiophanticResult {
+    int r, x, y;
+} DiophanticResult;
+
+extern int factorial_loop(int n);
+extern int factorial_recursive(int n);
+extern int gcd_loop(int a, int b);
+extern int gcd_recursive(int a, int b);
+extern DiophanticResult diophantic_loop(int a, int b, int c);
+extern DiophanticResult diophantic_recursive(int r0, int r1, int c);
 
 int main() {
     int option;
@@ -45,7 +55,7 @@ int main() {
                 printf("Result: x = %d, y = %d\n", resultSrtuct.x, resultSrtuct.y);
             } else if(resultSrtuct.r == 1) {
                 printf("No results\n");
-            } else if(resultSrtuct.r == 2) {
+            } else if(resultSrtuct.r == 1) {
                 printf("Infinite number of results\n");
             } else {
                 printf("Error\n");
@@ -59,7 +69,7 @@ int main() {
                 printf("Result: x = %d, y = %d\n", resultSrtuct.x, resultSrtuct.y);
             } else if(resultSrtuct.r == 1) {
                 printf("No results\n");
-            } else if(resultSrtuct.r == 2) {
+            } else if(resultSrtuct.r == 1) {
                 printf("Infinite number of results\n");
             } else {
                 printf("Error\n");

@@ -1,0 +1,95 @@
+V "GNAT Lib v10"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U test%b		test.adb		9689298c NE OO PK
+Z system.assertions%s	s-assert.adb		s-assert.ali
+
+U test%s		test.ads		251241af NE OO PR PK
+W ada%s			ada.ads			ada.ali
+W ada.assertions%s	a-assert.adb		a-assert.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-assert.ads		20230707070819 a1febc19 ada.assertions%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-c.ads		20230707070819 5421119b interfaces.c%s
+D system.ads		20230707070819 4635ec04 system%s
+D s-assert.ads		20230707070819 cd8d2c94 system.assertions%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D test.ads		20240416003906 d0cdec2d test%s
+D test.adb		20240416004940 4644c5a1 test%b
+G a e
+G c Z s b [test_factorial_loop test 6 15 none]
+G c Z s b [test_factorial_recursive test 7 15 none]
+G c Z s b [test_gcd_loop test 8 15 none]
+G c Z s b [test_gcd_recursive test 9 15 none]
+G c Z s b [test_diophantic_loop test 10 15 none]
+G c Z s b [test_diophantic_recursive test 11 15 none]
+X 1 ada.ads
+16K9*Ada 20e8 11|1r6 1r26
+X 2 a-assert.ads
+50K13*Assertions 66e19 11|1w10 1r30
+X 4 interfac.ads
+38K9*Interfaces 184e15 11|2r6 2r24 12|82r13 83r13 84r13 131r13 132r13 133r13
+X 5 i-c.ads
+18K20*C 230e17 11|2w17 2r35 12|82r24 83r24 84r24 131r24 132r24 133r24
+35I9*int<integer> 12|5r33 5r45 22r38 22r50 39r26 39r34 39r46 60r31 60r39
+. 60r51 82r26 83r26 84r26 88r34 88r43 88r51 131r26 132r26 133r26 137r38 137r46
+. 137r54
+X 11 test.ads
+4K9*Test 13l5 13e9 12|1b14 177l5 177t9
+6U15*test_factorial_loop 12|3b11 18l5 18t24
+7U15*test_factorial_recursive 12|20b11 35l5 35t29
+8U15*test_GCD_loop 12|37b11 56l5 56t18
+9U15*test_GCD_recursive 12|58b11 77l5 77t23
+10U15*test_diophantic_loop 12|79b11 126l5 126t25
+11U15*test_diophantic_recursive 12|128b11 175l5 175t30
+X 12 test.adb
+5V14*factorial_loop{5|35I9} 5>29 12s21 13s21 14s21 15s21 16s21 17s21
+5i29 n{5|35I9}
+22V14*factorial_recursive{5|35I9} 22>34 29s21 30s21 31s21 32s21 33s21 34s21
+22i34 n{5|35I9}
+39V14*gcd_loop{5|35I9} 39>23 39>31 46s21 47s21 48s21 49s21 50s21 51s21 52s21
+. 53s21 54s21 55s21
+39i23 a{5|35I9}
+39i31 b{5|35I9}
+60V14*gcd_recursive{5|35I9} 60>28 60>36 67s21 68s21 69s21 70s21 71s21 72s21
+. 73s21 74s21 75s21 76s21
+60i28 a{5|35I9}
+60i36 b{5|35I9}
+81R10 DiophanticResult 85e15 86r27 88r63 93r11
+82i9 r{5|35I9} 98r25 102r25 106r25 111r25 117r25 121r25 125r25
+83i9 x{5|35I9} 99r31 103r32 107r31 112r25
+84i9 y{5|35I9} 99r44 103r45 107r44 113r25
+88V14*diophantic_loop{81R10} 88>30 88>39 88>48 97s12 101s12 105s12 110s12
+. 116s12 120s12 124s12
+88i30 r0{5|35I9}
+88i39 r1{5|35I9}
+88i48 c{5|35I9}
+93r5 res{81R10} 97m5 98r21 99r27 99r40 101m5 102r21 103r28 103r41 105m5 106r21
+. 107r27 107r40 110m5 111r21 112r21 113r21 116m5 117r21 120m5 121r21 124m5
+. 125r21
+130R10 DiophanticResult 134e15 135r27 137r66 142r11
+131i9 r{5|35I9} 147r25 151r25 155r25 160r25 166r25 170r25 174r25
+132i9 x{5|35I9} 148r31 152r32 156r31 161r25
+133i9 y{5|35I9} 148r44 152r45 156r44 162r25
+137V14*diophantic_recursive{130R10} 137>35 137>43 137>51 146s12 150s12 154s12
+. 159s12 165s12 169s12 173s12
+137i35 a{5|35I9}
+137i43 b{5|35I9}
+137i51 c{5|35I9}
+142r5 res{130R10} 146m5 147r21 148r27 148r40 150m5 151r21 152r28 152r41 154m5
+. 155r21 156r27 156r40 159m5 160r21 161r21 162r21 165m5 166r21 169m5 170r21
+. 173m5 174r21
+

@@ -7,7 +7,7 @@ int main() {
     int result;
     DiophanticResult resultSrtuct;
 
-    printf("Library in C\n");
+    printf("Library in Rust wrapped in C!\n");
     while (1) {
         printf("1. Factorial loop\n2. Factorial recursive\n3. GCD loop\n4. GCD recursive\n5. Diophantic loop\n6. Diophantic recursive\n7. Exit\n");
         scanf("%d", &option);
@@ -45,7 +45,7 @@ int main() {
                 printf("Result: x = %lld, y = %lld\n", resultSrtuct.x, resultSrtuct.y);
             } else if(resultSrtuct.r == 1) {
                 printf("No results\n");
-            } else if(resultSrtuct.r == 1) {
+            } else if(resultSrtuct.r == 2) {
                 printf("Infinite number of results\n");
             } else {
                 printf("Error\n");
@@ -59,7 +59,7 @@ int main() {
                 printf("Result: x = %lld, y = %lld\n", resultSrtuct.x, resultSrtuct.y);
             } else if(resultSrtuct.r == 1) {
                 printf("No results\n");
-            } else if(resultSrtuct.r == 1) {
+            } else if(resultSrtuct.r == 2) {
                 printf("Infinite number of results\n");
             } else {
                 printf("Error\n");

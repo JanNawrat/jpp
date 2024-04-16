@@ -17,7 +17,7 @@ fn main() {
     let mut c : i64;
     let mut result : u64;
 
-    println!("Library in Rust");
+    println!("Library in Rust!");
     loop {
         println!("1. Factorial loop\n2. Factorial recursive\n3. GCD loop\n4. GCD recursive\n5. Diophantic loop\n6. Diophantic recursive\n7. Exit");
         option = read_number() as u8;

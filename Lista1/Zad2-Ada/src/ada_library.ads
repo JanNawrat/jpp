@@ -1,4 +1,4 @@
-package JPPLib is
+package Ada_Library is
     pragma Preelaborate;
     function factorial_loop(n: Integer) return Integer;
 
@@ -33,4 +33,4 @@ package JPPLib is
         t1_in : Integer := 1) return DiophanticResult;
 
 private
-end JPPLib;
+end Ada_Library;

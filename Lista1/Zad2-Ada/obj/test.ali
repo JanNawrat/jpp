@@ -1,0 +1,79 @@
+V "GNAT Lib v10"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U test%b		test.adb		75b348de NE OO PK
+Z system.assertions%s	s-assert.adb		s-assert.ali
+
+U test%s		test.ads		1f66c4a3 NE OO PR PK
+W ada%s			ada.ads			ada.ali
+W ada.assertions%s	a-assert.adb		a-assert.ali
+W ada_library%s		ada_library.adb		ada_library.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-assert.ads		20230707070819 a1febc19 ada.assertions%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D ada_library.ads	20240415233254 8fd76ba2 ada_library%s
+D system.ads		20230707070819 4635ec04 system%s
+D s-assert.ads		20230707070819 cd8d2c94 system.assertions%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D test.ads		20240416001707 314f1318 test%s
+D test.adb		20240416002616 44fc5bc6 test%b
+G a e
+G c Z s b [test_factorial_loop test 6 15 none]
+G c Z s b [test_factorial_recursive test 7 15 none]
+G c Z s b [test_gcd_loop test 8 15 none]
+G c Z s b [test_gcd_recursive test 9 15 none]
+G c Z s b [test_diophantic_loop test 10 15 none]
+G c Z s b [test_diophantic_recursive test 11 15 none]
+G r c none [test_factorial_loop test 6 15 none] [factorial_loop ada_library 3 14 none]
+G r c none [test_factorial_recursive test 7 15 none] [factorial_recursive ada_library 5 14 none]
+G r c none [test_gcd_loop test 8 15 none] [gcd_loop ada_library 7 14 none]
+G r c none [test_gcd_recursive test 9 15 none] [gcd_recursive ada_library 11 14 none]
+G r s diophanticresult [test_diophantic_loop test 10 15 none] [diophanticresultIP ada_library 15 10 none]
+G r c none [test_diophantic_loop test 10 15 none] [diophantic_loop ada_library 21 14 none]
+G r s diophanticresult [test_diophantic_recursive test 11 15 none] [diophanticresultIP ada_library 15 10 none]
+G r c none [test_diophantic_recursive test 11 15 none] [diophantic_recursive ada_library 26 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 9|2r6 2r26
+X 2 a-assert.ads
+50K13*Assertions 66e19 9|2w10 2r30
+X 4 ada_library.ads
+1K9*Ada_Library 36e16 9|1w6 1r23
+3V14*factorial_loop{integer} 10|7s21 8s21 9s21 10s21 11s21 12s21
+5V14*factorial_recursive{integer} 10|19s21 20s21 21s21 22s21 23s21 24s21
+7V14*gcd_loop{integer} 10|31s21 32s21 33s21 34s21 35s21 36s21 37s21 38s21
+. 39s21 40s21
+11V14*gcd_recursive{integer} 10|47s21 48s21 49s21 50s21 51s21 52s21 53s21
+. 54s21 55s21 56s21
+15R10*DiophanticResult 19e15 10|61r11 98r11
+16i9*r{integer} 10|66r25 70r25 74r25 79r25 85r25 89r25 93r25 103r25 107r25
+. 111r25 116r25 122r25 126r25 130r25
+17i9*x{integer} 10|67r31 71r32 75r31 80r25 104r31 108r32 112r31 117r25
+18i9*y{integer} 10|67r44 71r45 75r44 81r25 104r44 108r45 112r44 118r25
+21V14*diophantic_loop{15R10} 10|65s12 69s12 73s12 78s12 84s12 88s12 92s12
+26V14*diophantic_recursive{15R10} 10|102s12 106s12 110s12 115s12 121s12 125s12
+. 129s12
+X 9 test.ads
+4K9*Test 13l5 13e9 10|1b14 133l5 133t9
+6U15*test_factorial_loop 10|3b11 13l5 13t24
+7U15*test_factorial_recursive 10|15b11 25l5 25t29
+8U15*test_GCD_loop 10|27b11 41l5 41t18
+9U15*test_GCD_recursive 10|43b11 57l5 57t23
+10U15*test_diophantic_loop 10|59b11 94l5 94t25
+11U15*test_diophantic_recursive 10|96b11 131l5 131t30
+X 10 test.adb
+61r5 res{4|15R10} 65m5 66r21 67r27 67r40 69m5 70r21 71r28 71r41 73m5 74r21
+. 75r27 75r40 78m5 79r21 80r21 81r21 84m5 85r21 88m5 89r21 92m5 93r21
+98r5 res{4|15R10} 102m5 103r21 104r27 104r40 106m5 107r21 108r28 108r41 110m5
+. 111r21 112r27 112r40 115m5 116r21 117r21 118r21 121m5 122r21 125m5 126r21
+. 129m5 130r21
+

@@ -1,0 +1,24 @@
+[GENERATED OBJECT FILE]
+b__zad2.o
+[PROJECT FILES]
+/mnt/c/Users/janry/OneDrive/Dokumenty/Dev/jpp/Lista1/Zad2-Ada/zad2_project.gpr
+20240416001009 c64b256a9b2a0403ce40fbc71b387383
+[BOUND OBJECT FILES]
+/mnt/c/Users/janry/OneDrive/Dokumenty/Dev/jpp/Lista1/Zad2-Ada/obj/ada_library.o
+/mnt/c/Users/janry/OneDrive/Dokumenty/Dev/jpp/Lista1/Zad2-Ada/obj/test.o
+/mnt/c/Users/janry/OneDrive/Dokumenty/Dev/jpp/Lista1/Zad2-Ada/obj/zad2.o
+[GENERATED SOURCE FILES]
+b__zad2.ads
+b__zad2.adb
+b__zad2.ali
+[RESULTING OPTIONS]
+-L/mnt/c/Users/janry/OneDrive/Dokumenty/Dev/jpp/Lista1/Zad2-Ada/obj/
+-L/mnt/c/Users/janry/OneDrive/Dokumenty/Dev/jpp/Lista1/Zad2-Ada/obj/
+-L/usr/lib/gcc/x86_64-linux-gnu/10/adalib/
+-shared
+-shared-libgcc
+-lgnat-10
+-ldl
+[RUN PATH OPTION]
+/usr/lib/gcc/x86_64-linux-gnu/10/adalib/
+/usr/lib

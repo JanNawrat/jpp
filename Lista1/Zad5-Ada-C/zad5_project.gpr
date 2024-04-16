@@ -1,9 +1,9 @@
-project test_project is
+project zad5_project is
     for Languages use ("ada", "c");
 
     for Source_Dirs use ("src");
-    for Main use ("main.adb");
+    for Main use ("zad5.adb");
     for Object_Dir use "obj";
     for Exec_Dir use ".";
     
-end test_project;
+end zad5_project;

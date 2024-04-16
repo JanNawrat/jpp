@@ -1,4 +1,4 @@
-package body JPPLib is
+package body Ada_Library is
     function factorial_loop(n: Integer) return Integer is
         factorial: Integer := 1;
         n_copy: Integer := n;
@@ -142,4 +142,4 @@ package body JPPLib is
         return diophantic_recursive(r0, r1, c, s0, s1, t0, t1);
     end diophantic_recursive;
 
-end JPPLib;
+end Ada_Library;

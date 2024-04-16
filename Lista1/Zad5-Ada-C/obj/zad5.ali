@@ -1,0 +1,140 @@
+V "GNAT Lib v10"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U zad5%b		zad5.adb		fcc80c77 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_4%s	s-conca4.adb		s-conca4.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+W test%s		test.adb		test.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-assert.ads		20230707070819 a1febc19 ada.assertions%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-inteio.ads		20230707070819 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
+D a-tiinio.ads		20230707070819 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-c.ads		20230707070819 5421119b interfaces.c%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D system.ads		20230707070819 4635ec04 system%s
+D s-assert.ads		20230707070819 cd8d2c94 system.assertions%s
+D s-conca2.ads		20230707070819 02a0d7d0 system.concat_2%s
+D s-conca4.ads		20230707070819 7e642b20 system.concat_4%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-imgint.ads		20230707070819 02dbe0c2 system.img_int%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
+D test.ads		20240416003906 d0cdec2d test%s
+D zad5.adb		20240416004854 209bad08 zad5%b
+G a e
+G c Z b b [zad5 standard 6 11 none]
+G r c none [zad5 standard 6 11 none] [test_factorial_loop test 6 15 none]
+G r c none [zad5 standard 6 11 none] [test_factorial_recursive test 7 15 none]
+G r c none [zad5 standard 6 11 none] [test_gcd_loop test 8 15 none]
+G r c none [zad5 standard 6 11 none] [test_gcd_recursive test 9 15 none]
+G r c none [zad5 standard 6 11 none] [test_diophantic_loop test 10 15 none]
+G r c none [zad5 standard 6 11 none] [test_diophantic_recursive test 11 15 none]
+X 1 ada.ads
+16K9*Ada 20e8 32|2r6 2r24 3r6 3r31
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[9|46] 32|3w10 3r35
+X 8 a-textio.ads
+57K13*Text_IO 727e16 32|2w10 2r28
+508U14*Put_Line 32|62s4 64s4 66s7 67s7 68s7 69s7 70s7 71s7 72s7 76s13 79s13
+. 81s13 84s13 86s13 90s13 92s13 96s13 98s13 104s16 106s16 108s16 111s13 117s16
+. 119s16 121s16
+X 9 a-tiinio.ads
+59U14*Get 32|73s7[4|18] 77s13[4|18] 82s13[4|18] 87s13[4|18] 88s13[4|18] 93s13[4|18]
+. 94s13[4|18] 99s13[4|18] 100s13[4|18] 101s13[4|18] 112s13[4|18] 113s13[4|18]
+. 114s13[4|18]
+X 11 interfac.ads
+38K9*Interfaces 184e15 32|1r6 1r24 8r9 9r9 10r9 51r13 78r38 79r35 83r43 84r35
+. 89r32 89r53 90r35 95r37 95r58 96r35 102r45 102r66 102r87 104r42 104r94
+. 115r50 115r71 115r92 117r42 117r94
+X 12 i-c.ads
+18K20*C 230e17 32|1w17 1r35 8r20 9r20 10r20 51r24 78r49 79r46 83r54 84r46
+. 89r43 89r64 90r46 95r48 95r69 96r46 102r56 102r77 102r98 104r53 104r105
+. 115r61 115r82 115r103 117r53 117r105
+35I9*int<integer> 32|8r22 9r22 10r22 14r31 14r43 19r36 19r48 24r24 24r32
+. 24r44 29r29 29r37 29r49 34r32 34r41 34r49 39r42 39r51 39r59 39r68 39r77
+. 39r86 39r95 44r36 44r44 44r52 51r26 78r51 79r48 83r56 84r48 89r45 89r66
+. 90r48 95r50 95r71 96r48 102r58 102r79 102r100 104r55 104r107 115r63 115r84
+. 115r105 117r55 117r107
+X 31 test.ads
+4K9*Test 13e9 32|4w6 4r16
+6U15*test_factorial_loop 32|56s4
+7U15*test_factorial_recursive 32|57s4
+8U15*test_GCD_loop 32|58s4
+9U15*test_GCD_recursive 32|59s4
+10U15*test_diophantic_loop 32|60s4
+11U15*test_diophantic_recursive 32|61s4
+X 32 zad5.adb
+6U11*zad5 6b11 129l5 129t9
+7R8 DiophanticResult 11e13 12r25 34r61 39r107 44r64 52r19
+8i5 r{12|35I9} 103r29 105r32 107r32 116r29 118r32 120r32
+9i5 x{12|35I9} 104r78 117r78
+10i5 y{12|35I9} 104r130 117r130
+14V12*factorial_loop{12|35I9} 14>27 78s23
+14i27 n{12|35I9}
+19V12*factorial_recursive{12|35I9} 19>32 83s23
+19i32 n{12|35I9}
+24V12*gcd_loop{12|35I9} 24>21 24>29 89s23
+24i21 a{12|35I9}
+24i29 b{12|35I9}
+29V12*gcd_recursive{12|35I9} 29>26 29>34 95s23
+29i26 a{12|35I9}
+29i34 b{12|35I9}
+34V12*diophantic_loop{7R8} 34>28 34>37 34>46 102s29
+34i28 r0{12|35I9}
+34i37 r1{12|35I9}
+34i46 c{12|35I9}
+39V12*diophantic_recursive_body{7R8} 39>38 39>47 39>56 39>64 39>73 39>82
+. 39>91
+39i38 r0{12|35I9}
+39i47 r1{12|35I9}
+39i56 c{12|35I9}
+39i64 s0{12|35I9}
+39i73 s1{12|35I9}
+39i82 t0{12|35I9}
+39i91 t1{12|35I9}
+44V12*diophantic_recursive{7R8} 44>33 44>41 44>49 115s29
+44i33 a{12|35I9}
+44i41 b{12|35I9}
+44i49 c{12|35I9}
+49i4 option{integer} 73m11 74r12
+50i4 a{integer} 77m17 78r55 82m17 83r60 87m17 89r49 93m17 95r54 99m17 102r62
+. 112m17 115r67
+50i7 b{integer} 88m17 89r70 94m17 95r75 100m17 102r83 113m17 115r88
+50i10 c{integer} 101m17 102r104 114m17 115r109
+51i4 result{12|35I9} 78m13 79r58 83m13 84r58 89m13 90r58 95m13 96r58
+52r4 resultSrtuct{7R8} 102m13 103r16 104r65 104r117 105r19 107r19 115m13
+. 116r16 117r65 117r117 118r19 120r19
+
