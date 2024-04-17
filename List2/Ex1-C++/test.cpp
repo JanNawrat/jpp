@@ -2,7 +2,7 @@
 #include "catch_amalgamated.hpp"
 
 TEST_CASE("Galois field 1234577") {
-    SECTION("Constructrs") {
+    SECTION("Constructors") {
         REQUIRE( int(GaloisField()) == 0 );
         REQUIRE( int(GaloisField(1234577)) == 0 );
         REQUIRE( int(GaloisField(10000000)) == 123384 );
