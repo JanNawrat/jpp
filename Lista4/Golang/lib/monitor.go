@@ -50,7 +50,6 @@ func (m *Monitor) ReleaseFork(i int) {
 		}
 	}
 	if m.Fork[(m.n+i-1)%m.n] == 2 {
-		// ok to eat[(m.n + i-1) % m.n] signal
 		if m.OKtoEatC[(m.n+i-1)%m.n] != 0 {
 			m.OKtoEatS[(m.n+i-1)%m.n].Signal()
 		}
